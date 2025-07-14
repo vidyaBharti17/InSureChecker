@@ -113,3 +113,17 @@
 2025-07-14 15:02:15,496 - INFO - File saved: Screenshot (74).png
 2025-07-14 15:02:16,593 - INFO - Processed Screenshot (74).png - Eligibility: Not Eligible
 2025-07-14 15:02:16,595 - INFO - 127.0.0.1 - - [14/Jul/2025 15:02:16] "POST /upload HTTP/1.1" 200 -
+2025-07-14 15:31:45,581 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 15:31:45,582 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 15:31:45,584 - INFO -  * Restarting with stat
+2025-07-14 15:31:48,032 - WARNING -  * Debugger is active!
+2025-07-14 15:31:48,035 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 15:32:13,922 - INFO - 127.0.0.1 - - [14/Jul/2025 15:32:13] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 15:32:14,208 - INFO - 127.0.0.1 - - [14/Jul/2025 15:32:14] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 15:32:43,926 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 15:32:44,126 - INFO -  * Restarting with stat
+2025-07-14 15:32:47,038 - WARNING -  * Debugger is active!
+2025-07-14 15:32:47,042 - INFO -  * Debugger PIN: 131-649-126
