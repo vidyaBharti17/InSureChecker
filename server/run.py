@@ -5,6 +5,12 @@ import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path
 import spacy
+import config
+import logging
+
+# Set up logging
+logging.basicConfig(filename='app.log', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 app = Flask(__name__)
 CORS(app)
@@ -25,16 +31,19 @@ def hello():
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
+        logging.error('No file part in request')
         return 'No file part', 400
     file = request.files['file']
     if file.filename == '':
+        logging.error('No selected file')
         return 'No selected file', 400
     if file:
         filename = file.filename
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        file.save(file_path)
-
         try:
+            file.save(file_path)
+            logging.info(f'File saved: {filename}')
+
             if filename.lower().endswith('.pdf'):
                 images = convert_from_path(file_path)
                 text = ''
@@ -46,22 +55,21 @@ def upload_file():
                 text = pytesseract.image_to_string(img)
 
             # Process text with spaCy
-            doc = nlp(text)
+            doc = nlp(text.lower())
             age = None
             for ent in doc.ents:
                 if ent.label_ == 'AGE' or 'years' in ent.text.lower():
                     age = ent.text
                     break
 
-            approved_conditions = ['diabetes', 'hypertension']
-            doc = nlp(text.lower())
-            condition_found = any(condition in text.lower() for condition in approved_conditions)
-            eligibility = 'Eligible' if (age and int(age.split()[0]) >= 18 and condition_found) else 'Not Eligible'
+            condition_found = any(condition in text.lower() for condition in config.ELIGIBILITY_RULES['approved_conditions'])
+            eligibility = 'Eligible' if (age and int(age.split()[0]) >= config.ELIGIBILITY_RULES['min_age'] and condition_found) else 'Not Eligible'
             result = f'Extracted text: {text}\nEligibility: {eligibility}'
-
+            logging.info(f'Processed {filename} - Eligibility: {eligibility}')
 
             return result, 200
         except Exception as e:
+            logging.error(f'Error processing {filename}: {str(e)}')
             return f'Error extracting text: {str(e)}', 500
 
     return 'Error uploading file', 500

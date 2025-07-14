@@ -1,0 +1,115 @@
+2025-07-14 00:44:14,954 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 00:44:14,955 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 00:44:14,957 - INFO -  * Restarting with stat
+2025-07-14 00:44:18,377 - WARNING -  * Debugger is active!
+2025-07-14 00:44:18,382 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 00:47:21,166 - INFO - 127.0.0.1 - - [14/Jul/2025 00:47:21] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-07-14 00:49:16,487 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\config.py', reloading
+2025-07-14 00:49:16,741 - INFO -  * Restarting with stat
+2025-07-14 00:49:21,014 - WARNING -  * Debugger is active!
+2025-07-14 00:49:21,019 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 00:53:47,806 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\config.py', reloading
+2025-07-14 00:53:48,109 - INFO -  * Restarting with stat
+2025-07-14 00:53:53,109 - INFO -  * Restarting with stat
+2025-07-14 01:37:12,609 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 01:37:12,609 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 01:37:12,612 - INFO -  * Restarting with stat
+2025-07-14 01:37:14,822 - WARNING -  * Debugger is active!
+2025-07-14 01:37:14,826 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 01:37:39,327 - INFO - 127.0.0.1 - - [14/Jul/2025 01:37:39] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 01:37:39,594 - INFO - 127.0.0.1 - - [14/Jul/2025 01:37:39] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 01:38:35,238 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 01:38:35,425 - INFO -  * Restarting with stat
+2025-07-14 01:38:37,602 - WARNING -  * Debugger is active!
+2025-07-14 01:38:37,605 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 01:38:45,218 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\config.py', reloading
+2025-07-14 01:38:45,405 - INFO -  * Restarting with stat
+2025-07-14 01:38:47,698 - WARNING -  * Debugger is active!
+2025-07-14 01:38:47,705 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 01:46:19,803 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 01:46:19,963 - INFO -  * Restarting with stat
+2025-07-14 01:46:22,105 - WARNING -  * Debugger is active!
+2025-07-14 01:46:22,109 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 01:58:08,914 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 01:58:08,914 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 01:58:08,916 - INFO -  * Restarting with stat
+2025-07-14 01:58:11,130 - WARNING -  * Debugger is active!
+2025-07-14 01:58:11,134 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 01:58:30,236 - INFO - 127.0.0.1 - - [14/Jul/2025 01:58:30] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 01:58:30,506 - INFO - 127.0.0.1 - - [14/Jul/2025 01:58:30] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 02:02:44,603 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 02:02:44,788 - INFO -  * Restarting with stat
+2025-07-14 02:02:47,570 - WARNING -  * Debugger is active!
+2025-07-14 02:02:47,573 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 02:04:04,928 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 02:04:04,928 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 02:04:04,932 - INFO -  * Restarting with stat
+2025-07-14 02:04:07,454 - WARNING -  * Debugger is active!
+2025-07-14 02:04:07,457 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 02:04:26,383 - INFO - 127.0.0.1 - - [14/Jul/2025 02:04:26] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 02:04:26,648 - INFO - 127.0.0.1 - - [14/Jul/2025 02:04:26] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 02:08:43,639 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 02:08:43,841 - INFO -  * Restarting with stat
+2025-07-14 02:08:46,990 - WARNING -  * Debugger is active!
+2025-07-14 02:08:46,995 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 02:09:06,546 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 02:09:06,546 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 02:09:06,548 - INFO -  * Restarting with stat
+2025-07-14 02:09:09,390 - WARNING -  * Debugger is active!
+2025-07-14 02:09:09,393 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 02:09:37,126 - INFO - 127.0.0.1 - - [14/Jul/2025 02:09:37] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 02:09:37,411 - INFO - 127.0.0.1 - - [14/Jul/2025 02:09:37] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 02:12:27,150 - INFO - 127.0.0.1 - - [14/Jul/2025 02:12:27] "[32mGET / HTTP/1.1[0m" 302 -
+2025-07-14 02:12:27,364 - INFO - 127.0.0.1 - - [14/Jul/2025 02:12:27] "GET /login HTTP/1.1" 200 -
+2025-07-14 02:12:27,412 - INFO - 127.0.0.1 - - [14/Jul/2025 02:12:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-14 02:13:48,224 - INFO - 127.0.0.1 - - [14/Jul/2025 02:13:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-14 02:13:48,231 - INFO - 127.0.0.1 - - [14/Jul/2025 02:13:48] "GET /upload_page HTTP/1.1" 200 -
+2025-07-14 02:13:59,250 - INFO - File saved: Screenshot (74).png
+2025-07-14 02:14:00,194 - INFO - Processed Screenshot (74).png - Eligibility: Not Eligible
+2025-07-14 02:14:00,198 - INFO - 127.0.0.1 - - [14/Jul/2025 02:14:00] "POST /upload HTTP/1.1" 200 -
+2025-07-14 02:18:32,768 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 02:18:32,962 - INFO -  * Restarting with stat
+2025-07-14 02:18:35,578 - WARNING -  * Debugger is active!
+2025-07-14 02:18:35,582 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 02:20:42,036 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 02:20:42,201 - INFO -  * Restarting with stat
+2025-07-14 02:20:44,627 - WARNING -  * Debugger is active!
+2025-07-14 02:20:44,631 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 02:20:55,273 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 02:20:55,274 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 02:20:55,277 - INFO -  * Restarting with stat
+2025-07-14 02:20:57,536 - WARNING -  * Debugger is active!
+2025-07-14 02:20:57,540 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 14:48:36,420 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 14:48:36,597 - INFO -  * Restarting with stat
+2025-07-14 14:48:40,302 - WARNING -  * Debugger is active!
+2025-07-14 14:48:40,306 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 15:01:49,079 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 15:01:49,079 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 15:01:49,082 - INFO -  * Restarting with stat
+2025-07-14 15:01:51,540 - WARNING -  * Debugger is active!
+2025-07-14 15:01:51,544 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 15:02:15,496 - INFO - File saved: Screenshot (74).png
+2025-07-14 15:02:16,593 - INFO - Processed Screenshot (74).png - Eligibility: Not Eligible
+2025-07-14 15:02:16,595 - INFO - 127.0.0.1 - - [14/Jul/2025 15:02:16] "POST /upload HTTP/1.1" 200 -

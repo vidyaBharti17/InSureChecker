@@ -1,0 +1,26 @@
+Screenshot (74).png - Extracted text: x Problem Set 2| Unit 2: Simple’ % Download history x | +
+
+learning.edx.org/course/course-v1:MIT» ock-v1:MITx 0.1x+1T2025 +t) sequential+bloc 87514da7851a5'
+
+Test Cases: .
+1.
+Test Case 1:
+balance = 320000
+annualInterestRate = 0.2
+Result Your Code Should Generate:
+Lowest Payment: 29157.09
+2.
+
+Test Case 2:
+balance = 999999
+annualInterestRate = 0.18
+
+Result Your Code Should Generate:
+
+Lowest Payment: 9@325.03
+
+@ Hide Notes
+
+
+Eligibility: Not Eligible
+--------------------------------------------------

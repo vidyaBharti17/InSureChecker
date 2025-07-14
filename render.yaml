@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: insurance-claim-checker-backend
+    env: python
+    buildCommand: "pip install -r server/requirements.txt"
+    startCommand: "gunicorn --bind 0.0.0.0:5000 server.run:app"
+    plan: free
+    repo: https://github.com/vidyaBharti17/InSureChecker.git
+    rootDir: server
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.0"
