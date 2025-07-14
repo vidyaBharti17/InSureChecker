@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, url_for, flash
+from flask import Flask, request, render_template, redirect, url_for, flash, jsonify
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from flask_cors import CORS
 import os
@@ -37,7 +37,7 @@ login_manager.login_view = 'login'
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="vidya",  
+    password="vidya",  # Replace with your MySQL root password
     database="insurechecker"
 )
 cursor = db.cursor()
@@ -62,9 +62,6 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        if not request.form.get('username') or not request.form.get('password'):
-            flash('Please provide both username and password')
-            return redirect(url_for('login'))
         username = request.form['username']
         password = request.form['password']
         cursor.execute("SELECT id, password FROM users WHERE username = %s", (username,))
@@ -162,7 +159,15 @@ def upload_page():
         <input type="submit" value="Upload">
     </form>
     <a href="/logout">Logout</a>
+    <a href="/history">View History</a>
     '''
+
+@app.route('/history')
+@login_required
+def history():
+    cursor.execute("SELECT u.filename, r.extracted_text, r.eligibility, r.process_date FROM uploads u JOIN results r ON u.id = r.upload_id WHERE u.user_id = %s ORDER BY r.process_date DESC", (current_user.id,))
+    history_data = cursor.fetchall()
+    return jsonify([{'filename': row[0], 'extracted_text': row[1], 'eligibility': row[2], 'process_date': row[3].isoformat()} for row in history_data])
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

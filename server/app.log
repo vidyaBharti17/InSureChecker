@@ -205,3 +205,105 @@
 2025-07-14 23:15:35,535 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:35] "GET /login HTTP/1.1" 200 -
 2025-07-14 23:16:09,487 - INFO - 127.0.0.1 - - [14/Jul/2025 23:16:09] "POST /login HTTP/1.1" 200 -
 2025-07-14 23:16:19,305 - INFO - 127.0.0.1 - - [14/Jul/2025 23:16:19] "POST /login HTTP/1.1" 200 -
+2025-07-14 23:38:44,671 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 23:38:44,672 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 23:38:44,675 - INFO -  * Restarting with stat
+2025-07-14 23:38:46,822 - WARNING -  * Debugger is active!
+2025-07-14 23:38:46,825 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 23:39:33,903 - INFO - 127.0.0.1 - - [14/Jul/2025 23:39:33] "OPTIONS /login HTTP/1.1" 200 -
+2025-07-14 23:53:41,073 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 23:53:41,073 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 23:53:41,076 - INFO -  * Restarting with stat
+2025-07-14 23:53:43,303 - WARNING -  * Debugger is active!
+2025-07-14 23:53:43,308 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 23:54:02,902 - INFO - 127.0.0.1 - - [14/Jul/2025 23:54:02] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-14 23:55:40,241 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 23:55:40,448 - INFO -  * Restarting with stat
+2025-07-14 23:55:43,461 - WARNING -  * Debugger is active!
+2025-07-14 23:55:43,465 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 23:56:25,353 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 23:56:25,353 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 23:56:25,356 - INFO -  * Restarting with stat
+2025-07-14 23:56:27,653 - WARNING -  * Debugger is active!
+2025-07-14 23:56:27,655 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 23:56:45,222 - INFO - 127.0.0.1 - - [14/Jul/2025 23:56:45] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-14 23:56:45,555 - INFO - 127.0.0.1 - - [14/Jul/2025 23:56:45] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-14 23:58:10,542 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 23:58:10,713 - INFO -  * Restarting with stat
+2025-07-14 23:58:13,613 - WARNING -  * Debugger is active!
+2025-07-14 23:58:13,617 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:03:54,813 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-15 00:03:54,994 - INFO -  * Restarting with stat
+2025-07-15 00:03:57,522 - WARNING -  * Debugger is active!
+2025-07-15 00:03:57,525 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:04:27,043 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-15 00:04:27,247 - INFO -  * Restarting with stat
+2025-07-15 00:04:29,691 - WARNING -  * Debugger is active!
+2025-07-15 00:04:29,695 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:05:50,884 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-15 00:05:50,885 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 00:05:50,887 - INFO -  * Restarting with stat
+2025-07-15 00:05:53,255 - WARNING -  * Debugger is active!
+2025-07-15 00:05:53,258 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:06:16,754 - INFO - 127.0.0.1 - - [15/Jul/2025 00:06:16] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:06:17,086 - INFO - 127.0.0.1 - - [15/Jul/2025 00:06:17] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-15 00:07:14,408 - INFO - 127.0.0.1 - - [15/Jul/2025 00:07:14] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:07:14,431 - INFO - 127.0.0.1 - - [15/Jul/2025 00:07:14] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-15 00:09:58,124 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-15 00:09:58,124 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 00:09:58,126 - INFO -  * Restarting with stat
+2025-07-15 00:10:00,366 - WARNING -  * Debugger is active!
+2025-07-15 00:10:00,369 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:10:25,731 - INFO - 127.0.0.1 - - [15/Jul/2025 00:10:25] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:10:26,072 - INFO - 127.0.0.1 - - [15/Jul/2025 00:10:26] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-15 00:13:46,267 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-15 00:13:46,268 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 00:13:46,270 - INFO -  * Restarting with stat
+2025-07-15 00:13:49,221 - WARNING -  * Debugger is active!
+2025-07-15 00:13:49,224 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:14:23,092 - INFO - 127.0.0.1 - - [15/Jul/2025 00:14:23] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:14:23,439 - INFO - 127.0.0.1 - - [15/Jul/2025 00:14:23] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-15 00:17:14,969 - INFO - 127.0.0.1 - - [15/Jul/2025 00:17:14] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:17:15,295 - INFO - 127.0.0.1 - - [15/Jul/2025 00:17:15] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-15 00:20:45,168 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-15 00:20:45,169 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 00:20:45,171 - INFO -  * Restarting with stat
+2025-07-15 00:20:47,542 - WARNING -  * Debugger is active!
+2025-07-15 00:20:47,548 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:21:28,515 - INFO - 127.0.0.1 - - [15/Jul/2025 00:21:28] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:21:28,848 - INFO - 127.0.0.1 - - [15/Jul/2025 00:21:28] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-15 00:24:04,303 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-15 00:24:04,637 - INFO -  * Restarting with stat
+2025-07-15 00:25:17,269 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-15 00:25:17,269 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 00:25:17,271 - INFO -  * Restarting with stat
+2025-07-15 00:25:19,674 - WARNING -  * Debugger is active!
+2025-07-15 00:25:19,677 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:26:35,418 - INFO - 127.0.0.1 - - [15/Jul/2025 00:26:35] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:26:36,171 - INFO - 127.0.0.1 - - [15/Jul/2025 00:26:36] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-15 00:34:12,315 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-15 00:34:12,493 - INFO -  * Restarting with stat

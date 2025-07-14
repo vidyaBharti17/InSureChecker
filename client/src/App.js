@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import History from './History';
 
 function App() {
   const [file, setFile] = useState(null);
@@ -11,6 +12,7 @@ function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isRegistering, setIsRegistering] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
@@ -35,6 +37,7 @@ function App() {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
+        withCredentials: true, // For session handling
       });
       setMessage(response.data);
       const lines = response.data.split('\n');
@@ -50,24 +53,35 @@ function App() {
   };
 
   const handleAuthSubmit = async (event) => {
-  event.preventDefault();
-  const url = isRegistering ? '/register' : '/login';
-  const formData = new FormData();
-  formData.append('username', username);
-  formData.append('password', password);
+    event.preventDefault();
+    const url = isRegistering ? '/register' : '/login';
+    try {
+      const response = await axios.post(`http://localhost:5000${url}`, {
+        username,
+        password,
+      }, { withCredentials: true });
+      setMessage(response.data);
+      if (!isRegistering) {
+        setIsAuthenticated(true);
+        setMessage(''); // Clear message after successful login
+      }
+    } catch (error) {
+      setMessage('Error: ' + (error.response?.data || error.message));
+    }
+  };
 
-  try {
-    const response = await axios.post(`http://localhost:5000${url}`, formData, {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-    });
-    setMessage(response.data);
-    if (!isRegistering) window.location.href = '/upload_page'; // Redirect after login
-  } catch (error) {
-    setMessage('Error: ' + (error.response?.data || error.message));
-  }
-};
+  const handleLogout = async () => {
+    try {
+      await axios.get('http://localhost:5000/logout', { withCredentials: true });
+      setIsAuthenticated(false);
+      setMessage('Logged out');
+      setFile(null);
+      setExtractedText('');
+      setEligibility('');
+    } catch (error) {
+      setMessage('Error logging out: ' + error.message);
+    }
+  };
 
   return (
     <div className="App">
@@ -83,31 +97,33 @@ function App() {
         </form>
         {message && <p>{message}</p>}
       </div>
-      {/* {current_user && ( // Replace with actual login check logic later */}
-      <div>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Upload Medical Report:
-            <input type="file" onChange={handleFileChange} />
-          </label>
-          <br />
-          <button type="submit" disabled={loading}>Upload{loading && '...'}</button>
-        </form>
-        {file && <p>Selected file: {file.name}</p>}
-        {extractedText && (
-          <div>
-            <h3>Extracted Text:</h3>
-            <pre>{extractedText}</pre>
-          </div>
-        )}
-        {eligibility && (
-          <div>
-            <h3>Eligibility Status:</h3>
-            <p>{eligibility}</p>
-          </div>
-        )}
-      </div>
-      {/* )} */}
+      {isAuthenticated && (
+        <div>
+          <form onSubmit={handleSubmit}>
+            <label>
+              Upload Medical Report:
+              <input type="file" onChange={handleFileChange} />
+            </label>
+            <br />
+            <button type="submit" disabled={loading}>Upload{loading && '...'}</button>
+            <button onClick={handleLogout} style={{ marginLeft: '10px' }}>Logout</button>
+          </form>
+          {file && <p>Selected file: {file.name}</p>}
+          {extractedText && (
+            <div>
+              <h3>Extracted Text:</h3>
+              <pre>{extractedText}</pre>
+            </div>
+          )}
+          {eligibility && (
+            <div>
+              <h3>Eligibility Status:</h3>
+              <p>{eligibility}</p>
+            </div>
+          )}
+          <History />
+        </div>
+      )}
     </div>
   );
 }
