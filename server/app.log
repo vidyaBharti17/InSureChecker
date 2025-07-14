@@ -127,3 +127,81 @@
 2025-07-14 15:32:44,126 - INFO -  * Restarting with stat
 2025-07-14 15:32:47,038 - WARNING -  * Debugger is active!
 2025-07-14 15:32:47,042 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 16:04:23,790 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 16:04:23,790 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 16:04:23,792 - INFO -  * Restarting with stat
+2025-07-14 16:04:26,912 - WARNING -  * Debugger is active!
+2025-07-14 16:04:26,917 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 16:05:14,876 - INFO - 127.0.0.1 - - [14/Jul/2025 16:05:14] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 16:05:15,190 - INFO - 127.0.0.1 - - [14/Jul/2025 16:05:15] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 16:13:03,043 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:03] "OPTIONS /login HTTP/1.1" 200 -
+2025-07-14 16:13:03,385 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:03] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-07-14 16:13:16,311 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:16] "OPTIONS /login HTTP/1.1" 200 -
+2025-07-14 16:13:16,639 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:16] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-07-14 16:13:21,974 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:21] "OPTIONS /login HTTP/1.1" 200 -
+2025-07-14 16:13:22,310 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:22] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-07-14 16:13:25,933 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:25] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-14 16:13:26,259 - INFO - 127.0.0.1 - - [14/Jul/2025 16:13:26] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-14 16:13:53,922 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 16:13:53,922 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 16:13:53,924 - INFO -  * Restarting with stat
+2025-07-14 16:13:56,935 - WARNING -  * Debugger is active!
+2025-07-14 16:13:56,941 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 16:14:17,425 - INFO - 127.0.0.1 - - [14/Jul/2025 16:14:17] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 16:14:17,694 - INFO - 127.0.0.1 - - [14/Jul/2025 16:14:17] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 16:14:45,033 - INFO - 127.0.0.1 - - [14/Jul/2025 16:14:45] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-14 16:14:45,380 - INFO - 127.0.0.1 - - [14/Jul/2025 16:14:45] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-14 22:48:57,504 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 22:48:57,504 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 22:48:57,506 - INFO -  * Restarting with stat
+2025-07-14 22:48:59,698 - WARNING -  * Debugger is active!
+2025-07-14 22:48:59,701 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 22:49:51,898 - INFO - 127.0.0.1 - - [14/Jul/2025 22:49:51] "OPTIONS /login HTTP/1.1" 200 -
+2025-07-14 22:49:52,212 - INFO - 127.0.0.1 - - [14/Jul/2025 22:49:52] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-07-14 22:49:59,120 - INFO - 127.0.0.1 - - [14/Jul/2025 22:49:59] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-07-14 22:49:59,454 - INFO - 127.0.0.1 - - [14/Jul/2025 22:49:59] "GET /login?next=/upload HTTP/1.1" 200 -
+2025-07-14 22:59:36,856 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 22:59:36,856 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 22:59:36,858 - INFO -  * Restarting with stat
+2025-07-14 22:59:39,246 - WARNING -  * Debugger is active!
+2025-07-14 22:59:39,249 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 23:00:03,125 - INFO - 127.0.0.1 - - [14/Jul/2025 23:00:03] "POST /login HTTP/1.1" 200 -
+2025-07-14 23:00:25,278 - INFO - 127.0.0.1 - - [14/Jul/2025 23:00:25] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-14 23:14:15,006 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-14 23:14:15,188 - INFO -  * Restarting with stat
+2025-07-14 23:14:17,826 - WARNING -  * Debugger is active!
+2025-07-14 23:14:17,829 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 23:14:30,849 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-14 23:14:30,850 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 23:14:30,854 - INFO -  * Restarting with stat
+2025-07-14 23:14:33,071 - WARNING -  * Debugger is active!
+2025-07-14 23:14:33,073 - INFO -  * Debugger PIN: 131-649-126
+2025-07-14 23:14:53,373 - INFO - 127.0.0.1 - - [14/Jul/2025 23:14:53] "POST /login HTTP/1.1" 200 -
+2025-07-14 23:15:07,396 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:07] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-14 23:15:28,146 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:28] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-14 23:15:31,422 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:31] "POST /login HTTP/1.1" 200 -
+2025-07-14 23:15:32,736 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-14 23:15:32,983 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:32] "GET /login HTTP/1.1" 200 -
+2025-07-14 23:15:33,835 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-14 23:15:34,151 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:34] "GET /login HTTP/1.1" 200 -
+2025-07-14 23:15:34,557 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-14 23:15:34,564 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:34] "GET /login HTTP/1.1" 200 -
+2025-07-14 23:15:35,280 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-14 23:15:35,535 - INFO - 127.0.0.1 - - [14/Jul/2025 23:15:35] "GET /login HTTP/1.1" 200 -
+2025-07-14 23:16:09,487 - INFO - 127.0.0.1 - - [14/Jul/2025 23:16:09] "POST /login HTTP/1.1" 200 -
+2025-07-14 23:16:19,305 - INFO - 127.0.0.1 - - [14/Jul/2025 23:16:19] "POST /login HTTP/1.1" 200 -

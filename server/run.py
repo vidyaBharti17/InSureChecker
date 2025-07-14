@@ -8,6 +8,8 @@ from pdf2image import convert_from_path
 import spacy
 import config
 import logging
+import mysql.connector
+from werkzeug.security import generate_password_hash, check_password_hash
 
 # Set up logging
 logging.basicConfig(filename='app.log', level=logging.INFO,
@@ -15,7 +17,7 @@ logging.basicConfig(filename='app.log', level=logging.INFO,
 
 app = Flask(__name__)
 CORS(app)
-app.secret_key = 'your-secret-key'  # Change this to a secure random key in production
+app.secret_key = 'your-secret-key'  # Change this to a secure random key
 
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -31,25 +33,69 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-# Dummy user class
+# MySQL connection
+db = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="vidya",  
+    database="insurechecker"
+)
+cursor = db.cursor()
+
+# User class
 class User(UserMixin):
     def __init__(self, id):
         self.id = id
 
-# Dummy user database (replace with a real database later)
-users = {'admin': {'password': 'password123'}}
-
 @login_manager.user_loader
 def load_user(user_id):
-    if user_id in users:
-        return User(user_id)
+    cursor.execute("SELECT id, username, password FROM users WHERE id = %s", (user_id,))
+    user = cursor.fetchone()
+    if user:
+        return User(user[0])
     return None
 
 @app.route('/')
 def index():
     return redirect(url_for('login'))
 
-# ... (previous imports and setup remain the same)
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        if not request.form.get('username') or not request.form.get('password'):
+            flash('Please provide both username and password')
+            return redirect(url_for('login'))
+        username = request.form['username']
+        password = request.form['password']
+        cursor.execute("SELECT id, password FROM users WHERE username = %s", (username,))
+        user = cursor.fetchone()
+        if user and check_password_hash(user[1], password):
+            user_obj = User(user[0])
+            login_user(user_obj)
+            return redirect(url_for('upload_page'))
+        flash('Invalid credentials')
+    return render_template('login.html')
+
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = generate_password_hash(request.form['password'])
+        try:
+            cursor.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
+            db.commit()
+            flash('Registration successful! Please log in.')
+            return redirect(url_for('login'))
+        except mysql.connector.IntegrityError:
+            flash('Username already exists')
+            db.rollback()
+    return render_template('register.html')
 
 @app.route('/upload', methods=['GET', 'POST'])
 @login_required
@@ -92,13 +138,16 @@ def upload_file():
                 result = f'Extracted text: {text}\nEligibility: {eligibility}'
                 logging.info(f'Processed {filename} - Eligibility: {eligibility}')
 
-                # Save to file
-                with open('results.txt', 'a') as f:
-                    f.write(f'{filename} - {result}\n{"-"*50}\n')
+                # Save to database
+                cursor.execute("INSERT INTO uploads (filename, user_id) VALUES (%s, %s)", (filename, current_user.id))
+                upload_id = cursor.lastrowid
+                cursor.execute("INSERT INTO results (upload_id, extracted_text, eligibility) VALUES (%s, %s, %s)", (upload_id, text, eligibility))
+                db.commit()
 
                 return result, 200
             except Exception as e:
                 logging.error(f'Error processing {filename}: {str(e)}')
+                db.rollback()
                 return f'Error extracting text: {str(e)}', 500
 
     return 'Method not allowed', 405
