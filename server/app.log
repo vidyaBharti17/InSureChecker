@@ -307,3 +307,52 @@
 2025-07-15 00:26:36,171 - INFO - 127.0.0.1 - - [15/Jul/2025 00:26:36] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
 2025-07-15 00:34:12,315 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
 2025-07-15 00:34:12,493 - INFO -  * Restarting with stat
+2025-07-15 00:39:59,756 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.116.99:5000
+2025-07-15 00:39:59,757 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 00:39:59,760 - INFO -  * Restarting with stat
+2025-07-15 00:40:02,397 - WARNING -  * Debugger is active!
+2025-07-15 00:40:02,400 - INFO -  * Debugger PIN: 131-649-126
+2025-07-15 00:40:34,751 - INFO - 127.0.0.1 - - [15/Jul/2025 00:40:34] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-15 00:42:03,050 - INFO - 127.0.0.1 - - [15/Jul/2025 00:42:03] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-27 21:54:29,423 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.253.99:5000
+2025-07-27 21:54:29,424 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 21:54:29,427 - INFO -  * Restarting with stat
+2025-07-27 21:54:31,738 - WARNING -  * Debugger is active!
+2025-07-27 21:54:31,742 - INFO -  * Debugger PIN: 131-649-126
+2025-07-27 21:55:08,164 - INFO - 127.0.0.1 - - [27/Jul/2025 21:55:08] "OPTIONS /login HTTP/1.1" 200 -
+2025-07-27 21:55:12,776 - INFO - 127.0.0.1 - - [27/Jul/2025 21:55:12] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-27 22:01:49,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.253.99:5000
+2025-07-27 22:01:49,653 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 22:01:49,657 - INFO -  * Restarting with stat
+2025-07-27 22:01:52,055 - WARNING -  * Debugger is active!
+2025-07-27 22:01:52,059 - INFO -  * Debugger PIN: 131-649-126
+2025-07-27 22:02:04,828 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:04] "[32mGET /upload_page HTTP/1.1[0m" 302 -
+2025-07-27 22:02:05,080 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:05] "[32mGET /upload_page HTTP/1.1[0m" 302 -
+2025-07-27 22:02:05,143 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:05] "[31m[1mGET /login?next=/upload_page HTTP/1.1[0m" 405 -
+2025-07-27 22:02:05,147 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:05] "[31m[1mGET /login?next=/upload_page HTTP/1.1[0m" 405 -
+2025-07-27 22:02:15,641 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:15] "OPTIONS /login HTTP/1.1" 200 -
+2025-07-27 22:02:16,000 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:16] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-27 22:02:20,137 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:20] "OPTIONS /register HTTP/1.1" 200 -
+2025-07-27 22:02:20,492 - INFO - 127.0.0.1 - - [27/Jul/2025 22:02:20] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-07-27 22:08:33,669 - INFO -  * Detected change in 'C:\\Users\\vidya\\Documents\\Insurechecker\\server\\run.py', reloading
+2025-07-27 22:08:33,883 - INFO -  * Restarting with stat
+2025-07-27 22:16:49,318 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.253.99:5000
+2025-07-27 22:16:49,319 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 22:16:49,320 - INFO -  * Restarting with stat
+2025-07-27 22:16:51,665 - WARNING -  * Debugger is active!
+2025-07-27 22:16:51,668 - INFO -  * Debugger PIN: 131-649-126
+2025-07-27 22:17:23,335 - INFO - File saved: icec object diagram.png
+2025-07-27 22:17:25,164 - INFO - Processed icec object diagram.png - Eligibility: Eligible
+2025-07-27 22:17:25,165 - INFO - 127.0.0.1 - - [27/Jul/2025 22:17:25] "POST /upload HTTP/1.1" 200 -
