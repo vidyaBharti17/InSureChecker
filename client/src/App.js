@@ -1,8 +1,6 @@
-//App.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
-
 
 function App() {
   const [file, setFile] = useState(null);
@@ -11,14 +9,12 @@ function App() {
   const [eligibility, setEligibility] = useState('');
   const [loading, setLoading] = useState(false);
 
-
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
     setMessage('');
     setExtractedText('');
     setEligibility('');
   };
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -27,11 +23,9 @@ function App() {
       return;
     }
 
-
     setLoading(true);
     const formData = new FormData();
     formData.append('file', file);
-
 
     try {
       const response = await axios.post('http://localhost:5000/upload', formData, {
@@ -52,20 +46,24 @@ function App() {
     }
   };
 
-
   return (
     <div className="App">
       <h1>Insurance Claim Eligibility Checker</h1>
+    <p style={{ color: '#7f8c8d', fontSize: '1em' }}>A tool to process medical reports and determine claim eligibility.</p>
       <form onSubmit={handleSubmit}>
         <label>
           Upload Medical Report:
           <input type="file" onChange={handleFileChange} />
         </label>
         <br />
-        <button type="submit" disabled={loading}>Upload{loading && '...'}</button>
+        <button type="submit" disabled={loading}>
+          Upload{loading && '...'}
+        </button>
       </form>
       {file && <p>Selected file: {file.name}</p>}
-      {message && <p>{message}</p>}
+      {message && (
+        <p className={message.includes('Error') ? 'error' : 'success'}>{message}</p>
+      )}
       {extractedText && (
         <div>
           <h3>Extracted Text:</h3>
@@ -81,6 +79,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
