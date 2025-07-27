@@ -1,68 +1,14 @@
 .App {
   text-align: center;
-  margin-top: 50px;
-}
-
-
-h1 {
-  color: #333;
-}
-
-
-form {
-  margin: 20px 0;
-}
-
-
-input[type="file"] {
-  margin: 10px;
-}
-
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
-button:hover {
-  background-color: #0056b3;
-}
-
-
-pre {
-  background-color: #f5f5f5;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: left;
-  max-width: 600px;
-  margin: 10px auto;
-  white-space: pre-wrap;
-}
-
-
-h3 {
-  color: #333;
-  margin-top: 20px;
-}
-
-
-p {
-  margin: 5px 0;
-}
-.App {
-  text-align: center;
   margin: 20px auto;
   max-width: 800px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -94,21 +40,21 @@ input[type="file"] {
 
 button {
   padding: 12px 25px;
-  background-color: #3498db;
+  background: linear-gradient(90deg, #3498db, #2980b9);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
-  transition: background-color 0.3s;
+  transition: transform 0.2s;
 }
 
 button:hover {
-  background-color: #2980b9;
+  transform: scale(1.05);
 }
 
 button:disabled {
-  background-color: #95a5a6;
+  background: #95a5a6;
   cursor: not-allowed;
 }
 
@@ -128,7 +74,7 @@ p {
 }
 
 pre {
-  background-color: #ecf0f1;
+  background-color: #f5f5f5;
   padding: 15px;
   border-radius: 5px;
   text-align: left;
@@ -143,6 +89,47 @@ h3 {
   color: #2c3e50;
   margin-top: 20px;
   font-size: 1.5em;
+}
+
+/* Gradient Decorative Elements */
+.gradient-rect {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(45deg, #3498db, #e74c3c);
+  opacity: 0.2;
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
+
+.gradient-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #2ecc71, #f1c40f);
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+/* Positioning Decorative Elements */
+.gradient-rect-top-left {
+  top: -50px;
+  left: -100px;
+}
+
+.gradient-rect-bottom-right {
+  bottom: -50px;
+  right: -100px;
+}
+
+.gradient-circle-top-right {
+  top: -75px;
+  right: -75px;
+}
+
+.gradient-circle-bottom-left {
+  bottom: -75px;
+  left: -75px;
 }
 
 /* Responsive Design */
@@ -163,5 +150,9 @@ h3 {
   pre {
     max-width: 100%;
     padding: 10px;
+  }
+
+  .gradient-rect, .gradient-circle {
+    display: none; /* Hide gradients on small screens to avoid clutter */
   }
 }

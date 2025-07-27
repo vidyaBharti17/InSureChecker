@@ -48,8 +48,12 @@ function App() {
 
   return (
     <div className="App">
+      <div className="gradient-rect gradient-rect-top-left"></div>
+      <div className="gradient-rect gradient-rect-bottom-right"></div>
+      <div className="gradient-circle gradient-circle-top-right"></div>
+      <div className="gradient-circle gradient-circle-bottom-left"></div>
       <h1>Insurance Claim Eligibility Checker</h1>
-    <p style={{ color: '#7f8c8d', fontSize: '1em' }}>A tool to process medical reports and determine claim eligibility.</p>
+      <p style={{ color: '#7f8c8d', fontSize: '1em' }}>A tool to process medical reports and determine claim eligibility.</p>
       <form onSubmit={handleSubmit}>
         <label>
           Upload Medical Report:

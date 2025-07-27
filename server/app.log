@@ -356,3 +356,20 @@
 2025-07-27 22:17:23,335 - INFO - File saved: icec object diagram.png
 2025-07-27 22:17:25,164 - INFO - Processed icec object diagram.png - Eligibility: Eligible
 2025-07-27 22:17:25,165 - INFO - 127.0.0.1 - - [27/Jul/2025 22:17:25] "POST /upload HTTP/1.1" 200 -
+2025-07-27 22:24:21,496 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.253.99:5000
+2025-07-27 22:24:21,497 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 22:24:21,498 - INFO -  * Restarting with stat
+2025-07-27 22:24:23,731 - WARNING -  * Debugger is active!
+2025-07-27 22:24:23,734 - INFO -  * Debugger PIN: 131-649-126
+2025-07-27 22:24:55,421 - INFO - File saved: sample4.jpg
+2025-07-27 22:24:56,705 - INFO - Processed sample4.jpg - Eligibility: Eligible
+2025-07-27 22:24:56,706 - INFO - 127.0.0.1 - - [27/Jul/2025 22:24:56] "POST /upload HTTP/1.1" 200 -
+2025-07-27 22:38:35,081 - INFO - File saved: icec Sequence diagram.png
+2025-07-27 22:38:35,695 - INFO - Processed icec Sequence diagram.png - Eligibility: Not Eligible
+2025-07-27 22:38:35,696 - INFO - 127.0.0.1 - - [27/Jul/2025 22:38:35] "POST /upload HTTP/1.1" 200 -
+2025-07-27 22:40:10,086 - INFO - File saved: sample4.jpg
+2025-07-27 22:40:10,393 - INFO - Processed sample4.jpg - Eligibility: Eligible
+2025-07-27 22:40:10,394 - INFO - 127.0.0.1 - - [27/Jul/2025 22:40:10] "POST /upload HTTP/1.1" 200 -
